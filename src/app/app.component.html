@@ -1,0 +1,5 @@
+<H1>SSO Template</H1>
+<div class="g-signin2" (click) = "signIn('google')" *ngIf = "user == null" data-onsuccess="onSignIn"></div>
+<div *ngIf = "user != null">
+  <div> Hello {{user.getBasicProfile().getName()}}</div>
+</div>
